@@ -1,15 +1,16 @@
 Summary:            Utilities to convert Outlook .pst files to other formats
 Name:               libpst
 Version:            0.6.44
-Release:            1%{?dist}
+Release:            3%{?dist}
 License:            GPLv2+
 Group:              Applications/Productivity
 Source:             http://www.five-ten-sg.com/%{name}/packages/%{name}-%{version}.tar.gz
 BuildRoot:          %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 URL:                http://www.five-ten-sg.com/%{name}/
-Requires:           ImageMagick
+Requires:           ImageMagick >= 6.7.2.7
 Requires:           %{name}-libs = %{version}-%{release}
-BuildRequires:      ImageMagick freetype-devel gd-devel libjpeg-devel zlib-devel python-devel boost-devel
+BuildRequires:      ImageMagick >= 6.7.2.7
+BuildRequires:      freetype-devel gd-devel libjpeg-devel zlib-devel python-devel boost-devel
 
 %{!?python_sitelib:  %global python_sitelib  %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
@@ -146,6 +147,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Feb 19 2015 Jan Horak <jhorak@redhat.com> - 0.6.44-3
+- Rebuild due to rebase of ImageMagick
+
 * Sun Sep 20 2009 Carl Byington <carl@five-ten-sg.com> - 0.6.44-1
 - patch from Lee Ayres to add file name extensions in separate mode.
 - allow mixed items types in a folder in separate mode.
