@@ -1,0 +1,5 @@
+base referer
+rect $structpst__entryid.html 7,9 95,33
+rect $structFILETIME.html 149,9 231,33
+rect $structpst__string.html 267,9 347,33
+rect $structpst__binary.html 455,9 538,33

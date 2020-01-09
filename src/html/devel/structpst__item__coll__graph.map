@@ -1,0 +1,12 @@
+base referer
+rect $structpst__item__contact.html 336,1765 458,1789
+rect $structFILETIME.html 9,169 92,193
+rect $structpst__item__email.html 341,2396 453,2420
+rect $structpst__item__appointment.html 321,2602 473,2626
+rect $structpst__item__journal.html 337,246 457,270
+rect $structpst__string.html 10,2458 90,2482
+rect $structpst__item__attach.html 340,2776 454,2800
+rect $structpst__binary.html 9,2825 92,2849
+rect $structpst__item__extra__field.html 326,2689 468,2713
+rect $structpst__item__message__store.html 312,2977 482,3001
+rect $structpst__item__folder.html 341,3036 453,3060
