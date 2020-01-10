@@ -1,7 +1,7 @@
 Summary:            Utilities to convert Outlook .pst files to other formats
 Name:               libpst
 Version:            0.6.59
-Release:            2%{?dist}
+Release:            4%{?dist}
 License:            GPLv2+
 Group:              Applications/Productivity
 Source:             http://www.five-ten-sg.com/%{name}/packages/%{name}-%{version}.tar.gz
@@ -151,6 +151,12 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.6.59-4
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.6.59-3
+- Mass rebuild 2013-12-27
+
 * Thu Oct 31 2013 Petr Pisar <ppisar@redhat.com> - 0.6.59-2
 - Correct package changelog entry (bug #1025251)
 
